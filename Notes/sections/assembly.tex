@@ -1,5 +1,7 @@
 \section*{Assembly}
 
+\subsection*{Sizes of C Data Types in x86-64}
+
 \begin{tabular}{| l | l | l | l |}
     \hline
     C decleration & Size (bytes) & Intel data type & Assembly suffix \\
@@ -13,8 +15,9 @@
     double & 8 & Double precision & l \\
     \hline
 \end{tabular}
-\newline
-\newline
+
+\subsection*{Instruction Data Types}
+
 
 \begin{tabular}{| l | l |}
     \hline
@@ -27,24 +30,24 @@
     \hline
 \end{tabular}
 
-\subsection{X86-64 Integer Registers}
+\subsection*{x86-64 Integer Registers}
 
-\begin{tabular}{| l l | l l |}
+\begin{tabular}{| l | l l | l | l l |}
     \hline 
-    \%rax & (function result) & \%r8 & (fifth argument) \\
+    \%rax & \%eax \%ax \%al & (function result) & \%r8 & \%r8d & (fifth argument) \\
     \hline
-    \%rbx &                  & \%r9 & (sixth argument) \\
+    \%rbx & \$ebx \%bx \%bl & & \%r9 & \%r9d & (sixth argument) \\
     \hline 
-    \%rcx & (fourth argument) & \%r10 & \\
+    \%rcx & \$ecx \%xc \%cl & (fourth argument) & \%r10 & \%r10d & \\
     \hline 
-    \%rdx & (third argument)  & \%r11 & \\
+    \%rdx & \%edx \%dx \%dl & (third argument)  & \%r11 & \%r11d & \\
     \hline 
-    \%rsi & (second argument) & \%r12 & \\
+    \%rsi & \%esi \%si \%sil & (second argument) & \%r12 & \%r12d & \\
     \hline 
-    \%rdi & (first argument)  & \%r13 & \\
+    \%rdi & \%edi \%di \%dil & (first argument)  & \%r13 & \%r13d & \\
     \hline 
-    \%rsp & (stack pointer)   & \%r14 & \\
+    \%rsp & \%esp \%sp \% bsl & (stack pointer)   & \%r14 & \%r14d & \\
     \hline 
-    \%rbp &                   & \%r15 & \\
+    \%rbp & \%ebp \%bp \%bpl &                   & \%r15 & \%r15d & \\
     \hline 
 \end{tabular}
