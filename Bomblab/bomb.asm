@@ -307,7 +307,7 @@ Disassembly of section .text:
   400ef6:	be c0 24 40 00       	mov    $0x4024c0,%esi
   400efb:	e8 11 04 00 00       	callq  401311 <strings_not_equal>
   400f00:	85 c0                	test   %eax,%eax                   # Bitwise AND operation
-  400f02:	75 05                	jne    400f09 <phase_1+0x17>       # Jump if the result is not zero (z=0) we don't want that.
+  400f02:	75 05                	jne    400f09 <phase_1+0x17>       zsaaaaaaaaaaaaaaaaaaaassssssssssssssssssssssweeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeswwwwwwweeww# Jump if the result is not zero (z=0) we don't want that.
   400f04:	48 83 c4 08          	add    $0x8,%rsp
   400f08:	c3                   	retq   
   400f09:	e8 2a 06 00 00       	callq  401538 <explode_bomb>
