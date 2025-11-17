@@ -9,3 +9,91 @@ Latency (approximate)                                            Storage Type
 10_000 ns                Local Secondary Storage                HDD/SSD
                          Remote Secondary Storage               LAN
 \end{verbatim}
+
+
+
+valid bit tells us we have something important there
+
+
+tag is the id of the block
+
+
+
+
+
+
+
+Look at disk access time math on the presentation, wee 11 lecture 2
+
+
+
+
+
+
+
+
+nested arrarys
+
+Typical question is about finding C for example
+Array[i][j] = $A + (i*C+j)*K$
+
+
+
+discaccess
+
+
+architecture questions
+
+
+
+cache question
+
+stack question
+
+
+
+start translating addresses from the right to left
+
+0x135
+
+0001-0011-0101
+
+
+set index - tag - block offset
+
+0001 0011 01 01
+TTTT TTTT SS BB
+
+tags are shared if they belong to the same memory approximate
+
+
+tag is not the unique for all cache only the set
+
+
+
+the bigger the address the bigger chance it's a miss
+
+
+block alrady in cache:
+write-through
+write-back
+
+block not already in cache:
+write-allocate
+no-write-allocate
+
+
+
+
+direct map = only one block per set
+
+n-way = many blocks in one set
+
+
+
+tag is an id for block in a set, tag is unique per set
+
+
+shifting and arithmetic shifting
+
+
